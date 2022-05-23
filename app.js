@@ -35,7 +35,7 @@ let weatherIcon = document.querySelector(".weather-icon");
 
 
 button.addEventListener("click", function() {
-  fetch (`http://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&units=metric&APPID=5d066958a60d315387d9492393935c19`)
+  fetch (`https://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&units=metric&APPID=5d066958a60d315387d9492393935c19`)
   .then((res) => res.json())
   .then ((data) => {
     nameW.textContent = data.name;
